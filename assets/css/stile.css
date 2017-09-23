@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  z-index: 100;
+  color: black;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#board {
+  margin: auto;
+  position: relative;
+  background-color: #EEE;
+  overflow: hidden;
+}
+#board > * {
+  position: absolute;
+}
+
+#snake {
+  background-image: url('../img/snake-head.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+
+.body {
+  box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #72AC5F;
+  z-index: 2;
+  margin: 1px;
+}
+
+
+div[class|='food'] {
+  overflow: hidden;
+}
+
+div[class|='food']::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.food-0::after {
+  background-image: url('../img/foods/chicken.svg');
+  transform: rotate(45deg);
+}
+
+.food-1::after {
+  background-image: url('../img/foods/grapes.svg');
+}
+
+.food-2::after {
+  background-image: url('../img/foods/meat.svg');
+}
+
+.food-3::after {
+  background-image: url('../img/foods/pie.svg');
+}
+
+.food-4::after {
+  background-image: url('../img/foods/pancakes.svg');
+}
+
+.food-5::after {
+  background-image: url('../img/foods/gingerbread-man.svg');
+}
+
+.food-6::after {
+  background-image: url('../img/foods/lollipop.svg');
+}
+
+.food-7::after {
+  background-image: url('../img/foods/candy.svg');
+}
+
+.food-8::after {
+  background-image: url('../img/foods/macarons.svg');
+}
+
+.food-9::after {
+  background-image: url('../img/foods/hot-dog.svg');
+}
+
+.food-10::after {
+  background-image: url('../img/foods/sausage.svg');
+}
+
+.food-11::after {
+  background-image: url('../img/foods/fish.svg');
+}
+
+.food-12::after {
+  background-image: url('../img/foods/steak.svg');
+}
+
+
+
