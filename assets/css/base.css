@@ -1,0 +1,64 @@
+html,
+body,
+#board {
+  /* Break the flow */
+  position: absolute;
+  top: 0px;
+
+  /* Give them all the available space */
+  width: 100%;
+  height: 100%;
+
+  /* Remove the margins if any */
+  margin: 0;
+  padding: 0;
+
+  /* Allow them to scroll down the document */
+  overflow: hidden;
+}
+
+body {
+  /* Sending body at the bottom of the stack */
+  z-index: 1;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  z-index: 100;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#board {
+  margin: auto;
+  /* Making the wrapper stack above the body */
+  z-index: 2;
+}
+#board > * {
+  position: absolute;
+}
+
+#snake {
+  z-index: 3;
+}
+
+.body {
+  box-sizing: border-box;
+  z-index: 2;
+  margin: 1px;
+}
+
+div[class|='food'] {
+  overflow: hidden;
+}

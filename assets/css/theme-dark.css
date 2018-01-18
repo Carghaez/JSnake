@@ -1,0 +1,25 @@
+#score {
+    color: #fff;
+}
+
+#board {
+    background-color: #000;
+}
+
+#snake {
+    background-color: black;
+    background-image: url('../img/snake-head-inverse.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.body {
+    background-color: #9E9E9E;
+    border: 1px solid #000;
+}
+
+
+div[class|='food'] {
+    background-color: #8BC34A;
+    border-radius: 50%;
+}

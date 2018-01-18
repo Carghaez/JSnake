@@ -1,0 +1,21 @@
+#score {
+    color: #fff;
+}
+
+#board {
+    background-color: #000000;
+}
+
+#snake {
+    background-color: #AACC99;
+}
+
+.body {
+    background-color: #AACC99;
+    border: 1px solid #000000;
+}
+
+div[class|='food'] {
+    background-color: #AACC99;
+    border-radius: 50%;
+}

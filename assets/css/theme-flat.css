@@ -1,0 +1,82 @@
+#score {
+    color: #000;
+}
+
+#board {
+    background-color: #EEE;
+}
+
+#snake {
+    background-image: url('../img/snake-head.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.body {
+    border: 1px solid #000;
+    background-color: #72AC5F;
+}
+
+
+div[class|='food']::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.food-0::after {
+    background-image: url('../img/foods/chicken.svg');
+    transform: rotate(45deg);
+}
+
+.food-1::after {
+    background-image: url('../img/foods/grapes.svg');
+}
+
+.food-2::after {
+    background-image: url('../img/foods/meat.svg');
+}
+
+.food-3::after {
+    background-image: url('../img/foods/pie.svg');
+}
+
+.food-4::after {
+    background-image: url('../img/foods/pancakes.svg');
+}
+
+.food-5::after {
+    background-image: url('../img/foods/gingerbread-man.svg');
+}
+
+.food-6::after {
+    background-image: url('../img/foods/lollipop.svg');
+}
+
+.food-7::after {
+    background-image: url('../img/foods/candy.svg');
+}
+
+.food-8::after {
+    background-image: url('../img/foods/macarons.svg');
+}
+
+.food-9::after {
+    background-image: url('../img/foods/hot-dog.svg');
+}
+
+.food-10::after {
+    background-image: url('../img/foods/sausage.svg');
+}
+
+.food-11::after {
+    background-image: url('../img/foods/fish.svg');
+}
+
+.food-12::after {
+    background-image: url('../img/foods/steak.svg');
+}
